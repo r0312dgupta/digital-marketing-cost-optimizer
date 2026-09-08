@@ -1,34 +1,71 @@
 # Digital Marketing Cost Optimizer
 
-An end-to-end data analytics and AI project for analyzing digital marketing performance and optimizing advertising budget allocation across platforms, campaigns, and markets.
+An end-to-end Data Engineering, Analytics, Optimization, and AI project designed to analyze digital marketing performance and optimize advertising budget allocation across platforms, campaigns, and markets.
 
-## Project Status
+## Project Overview
 
-🚧 Work in Progress
+Digital marketing teams manage advertising investments across multiple channels, markets, and campaigns. Determining where budget should be allocated requires reliable data pipelines, consistent KPI definitions, performance analysis, forecasting, and optimization.
 
-### Day 1 - Data Ingestion & Quality Validation
+This project builds an end-to-end pipeline that transforms raw campaign performance data into validated analytical datasets and will progressively introduce marketing KPI engineering, forecasting, constrained budget optimization, and AI-assisted recommendations.
 
-- Set up Python project structure and virtual environment
-- Loaded a 30,000-row digital marketing campaign dataset
-- Inspected schema, dimensions, and data types
-- Validated missing values and duplicate records
-- Converted campaign date to datetime format
-- Validated year and month consistency against the campaign date
-- Established the initial data quality pipeline
+## Business Objectives
 
-## Planned Development
+- Consolidate and validate multi-channel marketing performance data.
+- Measure campaign and platform efficiency using standardized marketing KPIs.
+- Identify high-performing and underperforming campaigns, channels, and markets.
+- Forecast campaign performance using historical data.
+- Optimize budget allocation under business constraints.
+- Generate explainable recommendations for marketing decision-makers.
 
-- Marketing KPI engineering
-- Exploratory data analysis
-- Campaign and channel performance analysis
-- Forecasting
-- Constrained marketing budget optimization
-- AI-generated recommendations
-- LangGraph agent workflow
-- Streamlit dashboard
+## Implemented Components
 
-## Tech Stack
+### Data Ingestion
 
-Python | Pandas | NumPy | Git | GitHub
+- Built a reusable Python-based ingestion module.
+- Loaded a 30,000-row digital marketing performance dataset.
+- Implemented initial schema and dataset inspection.
+- Established a structured raw-data ingestion layer.
 
-More components will be added as the project develops.
+### Data Quality & Validation
+
+- Validated missing values and duplicate records.
+- Converted campaign dates into standardized datetime format.
+- Validated year and month fields against campaign dates.
+- Added foundational data-quality checks before downstream analytics.
+
+## Solution Roadmap
+
+The project is being developed toward the following workflow:
+
+```text
+Marketing Data Sources
+        |
+        v
+Data Ingestion Layer
+        |
+        v
+Raw Data Storage
+        |
+        v
+Data Quality & Validation
+        |
+        v
+Transformation & KPI Layer
+        |
+        v
+Exploratory & Performance Analytics
+        |
+        v
+Forecasting
+        |
+        v
+Constrained Budget Optimization
+        |
+        v
+LangGraph AI Workflow
+        |
+        v
+LLM-Generated Recommendations
+        |
+        v
+Streamlit Decision Dashboard
